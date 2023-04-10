@@ -11,19 +11,33 @@
   <link rel="stylesheet" href="./style.css">
 
   <title>Luis'Portfolio</title>
-  <script src=".script.js"></script>
+  <script src="./script.js"></script>
 </head>
 
 <body>
 
   <div class="page-background2 page-background2-desktop">
+    
+    <ul id="menu-popup" class="nav-desktop-clickmenu ">
+      <button class="close-popup-button" onclick="closeMenu()">click me</button>
+      <li>
+       <a href="#">Portfolio </a>
+      </li>
+       <li>
+         <a href="#">About </a>
+       </li>
+       <li>
+         <a href="#">Contact </a>
+       </li>
+     </ul>
+
     <header class="header">
 
       <a class="a" href="./vectors/luis-logo.png">
         <img class="my-logo" src="./vectors/My Logo.png" alt="Mi logo">
       </a>
       <nav class="nav hamburguer-hidden">
-        <button type="button" class="button">
+        <button type="button" class="button" onclick="openMenu ()">
           <img class="img2" src="./vectors/Union.png" alt="nav button">
         </button>
 
@@ -35,6 +49,12 @@
         <a href="#">Contact </a>
 
       </nav>
+
+
+    
+
+
+
     </header>
     <main class="main main-desktop">
 
