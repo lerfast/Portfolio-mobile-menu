@@ -11,6 +11,10 @@
   border-top-right-radius: 43px;
 }
 
+.x-button {
+  float: right;
+}
+
 .page-background {
   font-style: normal;
   font-size: 2.5rem;
@@ -47,6 +51,10 @@
 
 .img2 {
   background-color: #ffff;
+}
+
+#menu-options {
+  background: #2230d2;
 }
 
 .see {
@@ -610,31 +618,40 @@
   display: none;
 }
 
-.nav-desktop-clickmenu {
+#pop-up-menu {
   display: none;
-  position: absolute;
-  z-index: 2;
   width: 100%;
   height: 100%;
-  background-color: #6070ff;
-  line-height: 55px;
+  background-color: #031cfbb0;
+  position: fixed;
+  backdrop-filter: blur(5px);
+  z-index: 9;
 }
 
-.lionclick-menu {
-  background-color: #6070ff;
-  font-size: 40px;
-  line-height: 52px;
-  font-weight: 700;
-  color: #ffff;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+#links-blur {
+  background-color: #031cfbb0;
 }
 
-.li-popup-menu {
-  background-color: #6070ff;
+#header-menu {
+  display: none;
+}
+
+.header-menu-style {
+  position: absolute;
+  width: 400%;
+  height: 670px;
+  background-color: #031cfbb0;
+  backdrop-filter: blur(5px);
+  z-index: 9;
 }
 
 .close-popup-button {
-  float: right;
+  background: transparent;
+  font-size: 40px;
+  line-height: 100px;
+  font-weight: 700;
+  color: #ffff;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .grid-container2 {

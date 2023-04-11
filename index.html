@@ -11,25 +11,24 @@
   <link rel="stylesheet" href="./style.css">
 
   <title>Luis'Portfolio</title>
-  <script src="./script.js"></script>
+  
 </head>
 
 <body>
 
   <div class="page-background2 page-background2-desktop">
+
+    <div id="pop-up-menu">
+      <div>
+        <button id="close-popup-button" class="x-button"><img src="./vectors/close.png" alt=""></button>
+      </div>
+      <ul id="menu-options">
+        <li id="links-blur"><a class="close-popup-button" href="#portfolio"  >Portfolio</a></li>
+        <li id="links-blur"><a class="close-popup-button" href="#about" >About</a></li>
+        <li id="links-blur"><a class="close-popup-button" href="#contact"  >Contact</a></li>
+      </ul>
+    </div>
     
-    <ul id="menu-popup" class="nav-desktop-clickmenu ">
-      <button class="close-popup-button" onclick="closeMenu()"><img src="./vectors/close.png" alt=""></button>
-      <li class="li-popup-menu">
-       <a href="#portfolio" onclick="closeMenu()" class="lionclick-menu">Portfolio </a>
-      </li>
-       <li class="li-popup-menu">
-         <a href="#about" onclick="closeMenu()" class="lionclick-menu">About </a>
-       </li>
-       <li class="li-popup-menu">
-         <a href="#contact" onclick="closeMenu()" class="lionclick-menu">Contact </a>
-       </li>
-     </ul>
 
     <header class="header">
 
@@ -37,7 +36,7 @@
         <img class="my-logo" src="./vectors/My Logo.png" alt="Mi logo">
       </a>
       <nav class="nav hamburguer-hidden">
-        <button type="button" class="button" onclick="openMenu ()">
+        <button id="open-button" type="button" class="button">
           <img class="img2" src="./vectors/Union.png" alt="nav button">
         </button>
 
@@ -515,7 +514,7 @@
       </form>
     </div>
   </section>
-
+  <script src="./script.js"></script>
 </body>
 
 </html>

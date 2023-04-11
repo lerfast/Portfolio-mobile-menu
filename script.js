@@ -1,9 +1,14 @@
-function openMenu() {
-  const x = document.getElementById('menu-popup');
-  x.style.display = 'block';
-}
+const openButton = document.getElementById('open-button');
 
-function closeMenu() {
-  const x = document.getElementById('menu-popup');
-  x.style.display = 'none';
-}
+openButton.onclick = () => {
+  const x = document.getElementById('pop-up-menu');
+  x.style.display = 'block';
+};
+
+const closeButton = document.querySelectorAll('.x-button');
+closeButton.forEach((item) => {
+  item.onclick = () => {
+    const y = document.getElementById('pop-up-menu');
+    y.style.display = 'none';
+  };
+});
