@@ -56,7 +56,7 @@ const projects = {
 };
 
 function showNewSection(projectId) {
-  const container = document.getElementById('yoga-project');
+  const container = document.getElementById('portfolio');
   const newSection = document.createElement('div');
   newSection.id = 'pop-up-window';
   newSection.innerHTML = `<div class='grid-container-popup pop-up-container'><h3 style='margin: 0;' class='card-title'>${projects[projectId].title}<button id='close-popup-button'  class='x-button js-button' onclick='closeNewSection()'><img src='./vectors/close.png' alt='Close menu'></button></h3>
