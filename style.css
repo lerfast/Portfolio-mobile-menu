@@ -456,6 +456,12 @@
   cursor: pointer;
 }
 
+.button-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+}
+
 .see-btn:hover {
   background-color: #6070ff;
   color: #fff;
@@ -761,11 +767,10 @@
 
 .pop-up-container {
   align-self: center;
- 
+  height: 581px;
   width: 90%;
   background-color: white;
   padding: 3%;
-
 }
 
 .form-section h1 {
