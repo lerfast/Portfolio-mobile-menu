@@ -973,6 +973,11 @@
   margin-top: 40px;
 }
 
+#error-message {
+  color: red;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 768px) {
   .nav-desktop {
     display: flex;
