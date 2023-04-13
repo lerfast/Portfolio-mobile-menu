@@ -1015,12 +1015,13 @@
     display: flex;
     flex-direction: column;
     max-width: 85%;
-    gap: 24px;
+    gap: 10px;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-color: #ffff;
+    overflow-y: scroll ;
   }
 
   .main-desktop {
