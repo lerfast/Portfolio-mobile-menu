@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
   <img src="./vectors/luis-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>My new Blog</b></h3>
+  <h3><b>My Portfolio</b></h3>
 
 </div>
 
@@ -57,7 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 My new Blog <a name="about-project"></a>
+# 📖 My Portfolio <a name="about-project"></a>
 
 > Hello Microvers, I created it using HTML, CSS
 

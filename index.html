@@ -9,6 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
   <title>Luis'Portfolio</title>
   
@@ -17,7 +24,7 @@
 <body>
   <div id="pop-up-menu">
       
-    <button id="close-popup-button" class="x-button js-button"><img src="./vectors/close.png" alt=""></button>
+    <span id="close-popup-button" class="x-button2 js-button">X</span>
   
   <ul id="menu-options">
     <li id="links-blur"><a class="close-popup-button js-button" href="#portfolio"  >Portfolio</a></li>
@@ -100,17 +107,19 @@
     </main>
   </div>
   <section class="works-container" id="portfolio">
-
-    <div class="grid-container card1 grid-container-desktop">
+<!-- mobile version -->
+    <div class="grid-container card1 grid-container-desktop" id="guy-project">
       <div class="card-container card-container-desktop">
         <div class="container2-desktop">
           <div class="card-desktop">
             <div class="card-img2">
               <img class="card-img" src="./vectors/Snapshoot Portfolio.png" alt="image of my project" />
             </div>
+             
             <div>
+
               <div class="text-container">
-                <h2 class="card-title">1- Tonic</h3>
+                <h2 class="card-title">Tonic</h3>
                   <div class="frame-2">
                     <p class="client">CANOPY</p>
                     <img src="./vectors/Counter.png" alt="Counter">
@@ -128,7 +137,7 @@
                     <li class="tag-description2">CSS</li>
                     <li class="tag-description3">JAVASCRIPT</li>
                   </ul>
-                  <button type="button" class="see-btn">See project</button>
+                  <button  type="button" class="see-btn" onclick="showNewSection('guy')">See project</button>
               </div>
             </div>
 
@@ -148,7 +157,7 @@
             </div>
 
             <div class="text-container">
-              <h2 class="card-title">1-Tonic</h3>
+              <h2 class="card-title">Tonic</h3>
                 <div class="frame-2">
                   <p class="client">CANOPY</p>
                   <img src="./vectors/Counter.png" alt="Counter">
@@ -166,7 +175,7 @@
                   <li class="tag-description2">CSS</li>
                   <li class="tag-description3">JAVASCRIPT</li>
                 </ul>
-                <button type="button" class="see-btn">See project</button>
+                <button type="button" class="see-btn" onclick="showNewSection('guy')">See project</button>
             </div>
 
 
@@ -178,7 +187,7 @@
       </div>
     </div>
 
-    <div class="grid-container card1 grid-container-desktop">
+    <div class="grid-container card1 grid-container-desktop" id="availability-project">
       <div class="card-container card-container-desktop">
         <div class="container2-desktop">
           <div class="card-desktop">
@@ -187,7 +196,7 @@
             </div>
             <div>
               <div class="text-container">
-                <h2 class="card-title">2- Multi-Post
+                <h2 class="card-title">Multi-Post
                   Stories</h3>
                   <div class="frame-2">
                     <p class="client">CANOPY</p>
@@ -206,7 +215,7 @@
                     <li class="tag-description2">CSS</li>
                     <li class="tag-description3">JAVASCRIPT</li>
                   </ul>
-                  <button type="button" class="see-btn">See project</button>
+                  <button type="button" class="see-btn" onclick="showNewSection('availability')">See project</button>
               </div>
             </div>
 
@@ -226,7 +235,7 @@
             </div>
 
             <div class="text-container">
-              <h2 class="card-title">2-Multi-Post Stories</h3>
+              <h2 class="card-title">Multi-Post Stories</h3>
                 <div class="frame-2">
                   <p class="client">CANOPY</p>
                   <img src="./vectors/Counter.png" alt="Counter">
@@ -244,7 +253,7 @@
                   <li class="tag-description2">CSS</li>
                   <li class="tag-description3">JAVASCRIPT</li>
                 </ul>
-                <button type="button" class="see-btn">See project</button>
+                <button type="button" class="see-btn" onclick="showNewSection('availability')">See project</button>
             </div>
 
 
@@ -256,7 +265,7 @@
       </div>
     </div>
 
-    <div class="grid-container card1 grid-container-desktop">
+    <div class="grid-container card1 grid-container-desktop " id="yoga-project">
       <div class="card-container card-container-desktop">
         <div class="container2-desktop">
           <div class="card-desktop">
@@ -265,7 +274,7 @@
             </div>
             <div>
               <div class="text-container">
-                <h2 class="card-title">3- Tonic</h3>
+                <h2 class="card-title">Tonic</h3>
                   <div class="frame-2">
                     <p class="client">CANOPY</p>
                     <img src="./vectors/Counter.png" alt="Counter">
@@ -283,7 +292,7 @@
                     <li class="tag-description2">CSS</li>
                     <li class="tag-description3">JAVASCRIPT</li>
                   </ul>
-                  <button type="button" class="see-btn">See project</button>
+                  <button type="button" class="see-btn" onclick="showNewSection('yoga')">See project</button>
               </div>
             </div>
 
@@ -303,7 +312,7 @@
             </div>
 
             <div class="text-container">
-              <h2 class="card-title">3-Facebook 360</h3>
+              <h2 class="card-title">Facebook 360</h3>
                 <div class="frame-2">
                   <p class="client">CANOPY</p>
                   <img src="./vectors/Counter.png" alt="Counter">
@@ -321,7 +330,7 @@
                   <li class="tag-description2">CSS</li>
                   <li class="tag-description3">JAVASCRIPT</li>
                 </ul>
-                <button type="button" class="see-btn">See project</button>
+                <button type="button" class="see-btn" onclick="showNewSection('yoga')">See project</button>
             </div>
 
 
@@ -333,7 +342,7 @@
       </div>
     </div>
 
-    <div class="grid-container card1 grid-container-desktop">
+    <div class="grid-container card1 grid-container-desktop" id="art-project">
       <div class="card-container card-container-desktop">
         <div class="container2-desktop">
           <div class="card-desktop">
@@ -342,7 +351,7 @@
             </div>
             <div>
               <div class="text-container">
-                <h2 class="card-title">4- Multi-Post
+                <h2 class="card-title">Multi-Post
                   Stories</h3>
                   <div class="frame-2">
                     <p class="client">CANOPY</p>
@@ -361,7 +370,7 @@
                     <li class="tag-description2">CSS</li>
                     <li class="tag-description3">JAVASCRIPT</li>
                   </ul>
-                  <button type="button" class="see-btn">See project</button>
+                  <button type="button" class="see-btn" onclick="showNewSection('art')">See project</button>
               </div>
             </div>
 
@@ -381,7 +390,7 @@
             </div>
 
             <div class="text-container">
-              <h2 class="card-title">4-Uber Navigation</h3>
+              <h2 class="card-title">Uber Navigation</h3>
                 <div class="frame-2">
                   <p class="client">CANOPY</p>
                   <img src="./vectors/Counter.png" alt="Counter">
@@ -399,7 +408,7 @@
                   <li class="tag-description2">CSS</li>
                   <li class="tag-description3">JAVASCRIPT</li>
                 </ul>
-                <button type="button" class="see-btn">See project</button>
+                <button type="button" class="see-btn" onclick="showNewSection('art')">See project</button>
             </div>
 
 
@@ -466,7 +475,7 @@
     <ul class="skills">
       <li class="skill">
         <div class="name">
-          <p>Languages</p>
+          <p>Languages </p><i class="fa-solid fa-angle-down"></i>
 
 
         </div>
@@ -487,7 +496,7 @@
       </li>
       <li class="skill">
         <div class="name">
-          <p>Frameworks</p>
+          <p>Frameworks </p><i class="fa-solid fa-angle-right"></i>
 
 
         </div>
@@ -495,7 +504,7 @@
       <hr>
       <li class="skill">
         <div class="name">
-          <p>Skills</p>
+          <p>Skills </p><i class="fa-solid fa-angle-right"></i>
 
 
         </div>
@@ -520,3 +529,4 @@
 </body>
 
 </html>
+
