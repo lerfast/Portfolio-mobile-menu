@@ -13,7 +13,7 @@
 .x-button {
   float: right;
   background: transparent;
-  color: #67798E;
+  color: #67798e;
   font-weight: 700;
   font-size: 1.5rem;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
@@ -30,15 +30,10 @@
   cursor: pointer;
 }
 
-.js-button{
-  
-  
-  
+.js-button {
   font-weight: 700;
   font-size: 1.5rem;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  
-
 }
 
 .page-background {
@@ -676,7 +671,6 @@
 
 #links-blur {
   background-color: none;
-  height: 20vh;
   align-content: flex-start;
 }
 
@@ -715,6 +709,18 @@
   margin-bottom: 300px;
   padding: 0;
   list-style: none;
+}
+
+.Top-li {
+  width: 100%;
+  height: 78px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .name {

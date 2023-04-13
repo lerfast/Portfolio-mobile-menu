@@ -1,4 +1,4 @@
- const openButton = document.getElementById('open-button');
+const openButton = document.getElementById('open-button');
 
 openButton.onclick = () => {
   const x = document.getElementById('pop-up-menu');
