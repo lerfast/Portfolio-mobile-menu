@@ -999,7 +999,7 @@
     width: 100%;
     height: 100%;
     backdrop-filter: blur(8px);
-    background-color: hsla(234, 100%, 69%, 0.4);
+    background-color: hsla(234, 100%, 69%, 0.2);
     flex-direction: column;
     justify-content: center;
   }
