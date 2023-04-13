@@ -507,9 +507,10 @@
       <p>If you have an application you are interested in developing, a feature that you need built or a project that
         needs coding.
         I’d love to help with it!</p>
-      <form class="form" action="https://formspree.io/f/mdovwkrg" method="POST">
+      <form id="form-element" class="form" action="https://formspree.io/f/mdovwkrg" method="POST">
         <input name="name" type="text" placeholder="Your Name" maxlength="30" required>
-        <input name="email" type="email" placeholder="Your email Address" required>
+        <input id="email" name="email" type="email" placeholder="Your email Address" required>
+        <div id="error-message"></div>
         <textarea id="message" name="message" placeholder="Write your message here..." maxlength="500"
           required></textarea>
         <button type="submit" class="see align-center">Get in touch</button>
@@ -517,6 +518,7 @@
     </div>
   </section>
   <script src="./script.js"></script>
+  <script src="form-validation.js"></script>
 </body>
 
 </html>
