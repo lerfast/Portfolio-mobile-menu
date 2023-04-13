@@ -21,7 +21,7 @@ const projects = {
     technology2: 'CSS',
     technology3: 'JAVASCRIPT',
     image: './vectors/Snapshoot Portfolio.png',
-    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
 
   availability: {
@@ -31,7 +31,7 @@ const projects = {
     technology2: 'CSS',
     technology3: 'JAVASCRIPT',
     image: './vectors/Snapshoot Portfolio2.png',
-    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
 
   yoga: {
@@ -41,7 +41,7 @@ const projects = {
     technology2: 'CSS',
     technology3: 'JAVASCRIPT',
     image: './vectors/Snapshoot Portfolio3.png',
-    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
 
   art: {
@@ -51,7 +51,7 @@ const projects = {
     technology2: 'CSS',
     technology3: 'JAVASCRIPT',
     image: './vectors/Snapshoot Portfolio4.png',
-    paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry´s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   },
 };
 
@@ -60,10 +60,17 @@ function showNewSection(projectId) {
   const newSection = document.createElement('div');
   newSection.id = 'pop-up-window';
   newSection.innerHTML = `<div class='grid-container-popup pop-up-container'><h3 style='margin: 0;' class='card-title'>${projects[projectId].title}<span id='close-popup-button'  class='x-button js-button' onclick='closeNewSection()'>X</span></h3>
-                          <img src='${projects[projectId].image}' alt='${projects[projectId].title}'/>
-                          <div class='card-description'><p>${projects[projectId].paragraph}</p>
-                          <ul class= 'tags-list-style-none'><li class='tag-description1'><p class='new-section-technology'>${projects[projectId].technology1}</p></li><li class='tag-description2'><p class='new-section-technology'>${projects[projectId].technology2}</p></li><li class='tag-description3'><p>${projects[projectId].technology3}</p></li></ul>
-                          <div class=button-div><button class=see-btn>See Live   <img src="./vectors/live-icon.png" alt=""></button><button class='see-btn'>See Source  <img src="./vectors/github-link.png" alt=""></button></div></div></div>';`;
+                          <img class='popup-img' src='${projects[projectId].image}' alt='${projects[projectId].title}'/>
+                          <div class="frame-2">
+                    <p class="client">CANOPY</p>
+                    <img src="./vectors/Counter.png" alt="Counter">
+                    <p class="Role">Back End Dev</p>
+                    <img src="./vectors/Counter.png" alt="Counter">
+                    <p class="Role">2023</p>
+                  </div>
+                          <div class='popup-align'><div class='card-description2'><p class='popup-p'>${projects[projectId].paragraph}</p>
+                          <div><ul class= 'tags-list-style-none'><li class='tag-description1'><p class='new-section-technology'>${projects[projectId].technology1}</p></li><li class='tag-description2'><p class='new-section-technology'>${projects[projectId].technology2}</p></li><li class='tag-description3'><p>${projects[projectId].technology3}</p></li></ul>
+                          <div><div><div class=button-div><button class=see-btn>See Live   <img src="./vectors/live-icon.png" alt=""></button><button class='see-btn'>See Source  <img src="./vectors/github-link.png" alt=""></button></div></div></div></div></div>`;
   container.appendChild(newSection);
   newSection.style.display = 'flex';
 }
