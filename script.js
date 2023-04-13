@@ -1,4 +1,4 @@
-const openButton = document.getElementById('open-button');
+ const openButton = document.getElementById('open-button');
 
 openButton.onclick = () => {
   const x = document.getElementById('pop-up-menu');
@@ -16,7 +16,7 @@ closeButton.forEach((item) => {
 const projects = {
   guy: {
     Id: 'guy-project',
-    title: '1- Tonic',
+    title: 'Tonic',
     technology1: 'HTML',
     technology2: 'CSS',
     technology3: 'JAVASCRIPT',
@@ -26,7 +26,7 @@ const projects = {
 
   availability: {
     Id: 'availability-project',
-    title: '2- Multi-Post Stories',
+    title: 'Multi-Post Stories',
     technology1: 'HTML',
     technology2: 'CSS',
     technology3: 'JAVASCRIPT',
@@ -36,7 +36,7 @@ const projects = {
 
   yoga: {
     Id: 'yoga-project',
-    title: '3- Tonic',
+    title: 'Tonic',
     technology1: 'HTML',
     technology2: 'CSS',
     technology3: 'JAVASCRIPT',
@@ -46,7 +46,7 @@ const projects = {
 
   art: {
     Id: 'art-project',
-    title: '4- Multi-Post Stories',
+    title: 'Multi-Post Stories',
     technology1: 'HTML',
     technology2: 'CSS',
     technology3: 'JAVASCRIPT',
@@ -59,11 +59,11 @@ function showNewSection(projectId) {
   const container = document.getElementById('portfolio');
   const newSection = document.createElement('div');
   newSection.id = 'pop-up-window';
-  newSection.innerHTML = `<div class='grid-container-popup pop-up-container'><h3 style='margin: 0;' class='card-title'>${projects[projectId].title}<button id='close-popup-button'  class='x-button js-button' onclick='closeNewSection()'><img src='./vectors/close.png' alt='Close menu'></button></h3>
+  newSection.innerHTML = `<div class='grid-container-popup pop-up-container'><h3 style='margin: 0;' class='card-title'>${projects[projectId].title}<span id='close-popup-button'  class='x-button js-button' onclick='closeNewSection()'>X</span></h3>
                           <img src='${projects[projectId].image}' alt='${projects[projectId].title}'/>
                           <div class='card-description'><p>${projects[projectId].paragraph}</p>
                           <ul class= 'tags-list-style-none'><li class='tag-description1'><p class='new-section-technology'>${projects[projectId].technology1}</p></li><li class='tag-description2'><p class='new-section-technology'>${projects[projectId].technology2}</p></li><li class='tag-description3'><p>${projects[projectId].technology3}</p></li></ul>
-                          <div class=button-div><button class=see-btn>See Live</button><button class='see-btn'>See Source</button></div></div></div>';`;
+                          <div class=button-div><button class=see-btn>See Live   <img src="./vectors/live-icon.png" alt=""></button><button class='see-btn'>See Source  <img src="./vectors/github-link.png" alt=""></button></div></div></div>';`;
   container.appendChild(newSection);
   newSection.style.display = 'flex';
 }

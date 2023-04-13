@@ -12,6 +12,33 @@
 
 .x-button {
   float: right;
+  background: transparent;
+  color: #67798E;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.x-button2 {
+  float: right;
+  background: transparent;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.js-button{
+  
+  
+  
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  
+
 }
 
 .page-background {
@@ -444,7 +471,7 @@
   top: 12px;
   border-radius: 8px;
   border: 1px solid #6070ff;
-  padding: 12px;
+  padding: 2px;
   background: #fff;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -767,7 +794,7 @@
 
 .pop-up-container {
   align-self: center;
-  height: 581px;
+  height: 90%;
   width: 90%;
   background-color: white;
   padding: 3%;
