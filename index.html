@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background: #E5E5E5;">
 
 <head>
   <meta charset="UTF-8">
@@ -33,6 +33,7 @@
   </ul>
 </div>
 
+<div class="all-page">
 
   <div class="page-background2 page-background2-desktop">
 
@@ -52,9 +53,9 @@
       </nav>
 
       <nav class="nav-desktop ">
-        <a href="#">Portfolio </a>
-        <a href="#">About </a>
-        <a href="#">Contact </a>
+        <a href="#portfolio">Portfolio </a>
+        <a href="#about">About </a>
+        <a href="#contact">Contact </a>
 
       </nav>
 
@@ -516,16 +517,19 @@
       <p>If you have an application you are interested in developing, a feature that you need built or a project that
         needs coding.
         I’d love to help with it!</p>
-      <form id="form-element" class="form" action="https://formspree.io/f/mdovwkrg" method="POST">
+      <form id="formData1" class="form" action="https://formspree.io/f/mdovwkrg" method="POST" onsubmit="return validateForm()">
         <input id="name1" name="name" type="text" placeholder="Your Name" maxlength="30" required>
         <input id="email" name="email" type="email" placeholder="Your email Address" required>
         <div id="error-message"></div>
-        <textarea id="message" name="message" placeholder="Write your message here..." maxlength="500"
+        <textarea id="message2" name="message" type="text" placeholder="Write your message here..." maxlength="500"
           required></textarea>
-        <button type="submit" class="see align-center">Get in touch</button>
+        <button id="submit" type="submit" class="see align-center">Get in touch</button>
       </form>
     </div>
   </section>
+  
+</div>
+ 
   <script src="./script.js"></script>
   <script src="form-validation.js"></script>
   <script src="storage.js"></script>
